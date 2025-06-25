@@ -1,0 +1,332 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f6f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+  .special-service-for-women {
+    width: 100%;
+    padding: 80px 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.special-service-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 50px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    background: #f0e9e0;
+}
+.sub-makeups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.special-service-row-reverse {
+    flex-direction: row-reverse;
+
+}
+
+.special-service-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.special-service-text {
+    flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+.special-service-text h1,
+.special-service-text h2,
+.special-service-text h3 {
+    color: #363636;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.special-service-text h1 {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.special-service-text h1::before,
+.special-service-text h1::after {
+    content: "❊";
+    color: #c97d60;
+    font-size: 1.8rem;
+    animation: rotate 15s linear infinite;
+}
+
+.special-service-text h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    
+}
+
+.special-service-text h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c97d60;
+    margin: 15px 0;
+}
+
+.special-service-text h3 {
+    font-size: 1.4rem;
+    color: #524848;
+    margin: 20px 0 15px;
+}
+
+.special-service-text p {
+    font-size: 1rem;
+    color: #2c3e2b;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.special-service-image {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+.special-service-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.special-service-image img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .special-service-row {
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+
+    .special-service-row-reverse {
+        flex-direction: column;
+    }
+
+    .special-service-text,
+    .special-service-image {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .special-service-text h1 {
+        font-size: 2rem;
+    }
+
+    .special-service-text h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+
+
+.makeup-table th, .makeup-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+
+
+.makeup-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+@media screen and (max-width: 768px) {
+    .makeup-table {
+        font-size: 14px;
+    }
+
+    .makeup-table th, .makeup-table td {
+        padding: 8px;
+    }
+}
+
+
+
+
+/* Package Grid */
+.package-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    padding-top: 130px;
+}
+
+/* Package Card */
+.package-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 30%;
+
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-image {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+}
+
+.package-badge {
+    background: #da7d92;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    border-radius: 0 25px 25px 0;
+}
+
+.package-content {
+    padding: 1.5rem;
+}
+.package-content h2 {
+    color: #690634;
+}
+
+.price {
+    color: #e83e8c;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.services-list {
+    list-style: none;
+    margin: 1rem 0;
+   
+}
+
+.services-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    color: #924468;
+}
+
+.services-list li:before {
+    content: "✓";
+    color: #e83e8c;
+    margin-right: 0.5rem;
+}
+
+.btn-book {
+    background: #e83e8c;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+@media (max-width: 1024px) {
+    .package-grid {
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .package-card {
+        width: 45%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .package-card {
+        width: 90%;
+    }
+    .package-image {
+        height: 300px;
+       
+    }
+}
+
+@media (max-width: 480px) {
+  
+    .package-image {
+        height: 200px;
+       
+    }
+}
+
+
+
+
+/* Styling for the floating WhatsApp button */
+.whatsapp-btn {
+    position: fixed; /* Makes the button fixed on the page */
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 20px; /* Distance from the right of the page */
+    z-index: 1000; /* Ensures it appears above other content */
+    width: 60px; /* Button size */
+    height: 60px;
+    background-color: #25d366; /* WhatsApp green color */
+    border-radius: 50%; /* Makes it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-btn img {
+    width: 35px; /* Icon size */
+    height: 35px;
+  }
+  
+  .whatsapp-btn:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  @media (max-width: 768px) {
+  .whatsapp-btn {
+    bottom: 10px;
+    right: 10px;
+    width: 40px; /* Button size */
+    height: 40px;
+  }
+  .whatsapp-btn img {
+    width: 25px; /* Icon size */
+    height: 25px;
+  }
+  }

@@ -1,0 +1,232 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f6f0;
+  margin: 0;
+  padding: 0;
+}
+.typeof-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+
+
+.skin-grooming-woomen {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Playfair Display', serif;
+  padding-top: 130px;
+}
+
+.skin-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+  background: #f0e9e0;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  
+}
+
+.skin-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.skin-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+
+.skin-row-text{
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+.skin-row-text h1,
+.skin-row-text h2,
+.skin-row-text h3 {
+  color: #363636;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.skin-row-text h1 {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.skin-row-text h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.skin-row-text h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #c97d60;
+  margin: 15px 0;
+}
+
+.skin-row-text h3 {
+  font-size: 1.4rem;
+  color: #352d2d;
+  margin: 20px 0 15px;
+}
+
+.skin-row-text p {
+  font-size: 1rem;
+  color: #2c3e2b;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+
+.image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.03);
+}
+
+/* Pricing Table Styling */
+.pricing-table {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.header {
+  display: flex;
+  background:  #8ba888;
+  color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.pricing-row {
+  display: flex;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+  color: #283a23;
+}
+
+.pricing-row:hover {
+  background: #fff9f8;
+}
+
+.column {
+  flex: 1;
+  padding: 8px 10px;
+}
+
+
+.facial-image{
+  min-height: 450px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+  
+.facial-image{
+  min-height: 300px;
+}
+  .skin-row {
+      flex-direction: column;
+      padding: 30px;
+      margin-bottom: 40px;
+  }
+
+  .skin-row-reverse {
+      flex-direction: column;
+  }
+
+  .skin-row-text,
+  .image {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .skin-row-text h1 {
+      font-size: 2rem;
+  }
+
+  .skin-row-text h2 {
+      font-size: 1.5rem;
+  }
+
+ 
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Styling for the floating WhatsApp button */
+.whatsapp-btn {
+  position: fixed; /* Makes the button fixed on the page */
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  z-index: 1000; /* Ensures it appears above other content */
+  width: 60px; /* Button size */
+  height: 60px;
+  background-color: #25d366; /* WhatsApp green color */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 35px; /* Icon size */
+  height: 35px;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+.whatsapp-btn {
+  bottom: 10px;
+  right: 10px;
+  width: 40px; /* Button size */
+  height: 40px;
+}
+.whatsapp-btn img {
+  width: 25px; /* Icon size */
+  height: 25px;
+}
+}

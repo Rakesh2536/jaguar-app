@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" href="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD/CUST1635/logo/V_1740732659362_1.jpg" sizes="48x48" type="image/svg+xml">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>JAGUAR UNISEX HAIR & BEAUTY SALON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+   
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar" id="navbar">
+       <div class="navbar-content">
+           <!-- Logo Section -->
+           <div class="logo" data-aos="fade-right">
+               <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD/CUST1635/logo/V_1740732659362_1.jpg" alt="Salon Logo">
+               <div class="brand-wrapper">
+                   <span class="shop-name notranslate">JAGUAR UNISEX</span>
+                   <span class="shop-tagline notranslate">HAIR & BEAUTY SALOON</span>
+               </div>
+           </div>
+
+           <!-- Mobile Menu Toggle -->
+           <div class="menu-toggle" id="mobile-menu">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+           </div>
+
+           <!-- Navigation List -->
+           <ul class="nav-list" id="nav-list">
+               <li data-aos="fade-down" data-aos-delay="100"><a href="home.html">Home</a></li>
+               <li data-aos="fade-down" data-aos-delay="150"><a href="about.html">About Us</a></li>
+               <li id="nav-item-service" data-aos="fade-down" data-aos-delay="200"><a>Services</a>
+                   <ul class="dropdown">
+                       <li><a>Men</a>
+                           <ul class="submenu">
+                               <li><a href="hairservices.html">Hair Services</a></li>
+                               <li><a href="skin&grooming.html">Skin & Grooming</a></li>
+                               <li><a href="specialservices.html">Special Services</a></li>
+                           </ul>
+                       </li>
+                       <li><a>Women</a>
+                           <ul class="submenu">
+                               <li><a href="skin&groomingwomen.html">Skin & Grooming</a></li>
+                               <li><a href="haircarefrwomen.html">Hair Styling</a></li>
+                               <li><a href="specialservicesfrwomen.html">Special Services</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </li>
+               <li data-aos="fade-down" data-aos-delay="250"><a href="gallery.html">Gallery</a></li>
+               <li data-aos="fade-down" data-aos-delay="300"><a href="ourbranches.html">Our Branches</a></li>
+               <li data-aos="fade-down" data-aos-delay="350"><a href="contact.html">Contact</a></li>
+               <li data-aos="fade-down" data-aos-delay="400" onclick="onSchedule()"><a href="#footer">Schedule</a></li>
+
+
+               <!-- Custom Language Selector -->
+               <li class="nav-item" data-aos="fade-down" data-aos-delay="450">
+                   <div class="translate-container notranslate">
+                       <button class="translate-btn" id="selected-lang" onclick="toggleDropdown()">
+                           English
+                       </button>
+                       <div class="language-dropdown" id="languageDropdown">
+                           <button onclick="translateLanguage('en','English')">English</button>
+                           <button onclick="translateLanguage('te','Telugu')">Telugu</button>
+                           <button onclick="translateLanguage('sa','Sanskrit')">Sanskrit</button>
+                           <button onclick="translateLanguage('hi','Hindi')">Hindi</button>
+                       </div>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </nav>
+
+   <!-- Landing Section -->
+   <section class="landing">
+       <div class="landing-content" data-aos="fade-up" data-aos-delay="300">
+           <!-- <h1 data-aos="fade-up" data-aos-delay="400">Discover Your Inner Glow</h1>
+           <p data-aos="fade-up" data-aos-delay="500">Experience world-class beauty and wellness treatments at Jaguar Unisex Hair & Beauty Saloon.</p> -->
+           <a href="#fewwords" class="explore-more" data-aos="fade-up" data-aos-delay="600">
+            Explore More
+            <i class="fas fa-arrow-down"></i> <!-- Down arrow icon -->
+        </a>
+       </div>
+   </section>
+
+
+   <!-- About Section -->
+   <section class="about-section" id="fewwords">
+       <div class="about-container">
+           <!-- Left Side: Text Content -->
+           <div class="about-text" data-aos="fade-right">
+               <h2>Few Words About Us</h2>
+               <p>
+                
+                Welcome to our <b>peaceful sanctuary </b>where your well-being is our number one priority.
+                 We're all about relaxation and rejuvenation, and our skilled team is here to deliver
+                  just that. Our unique spa treatments are crafted to recharge and bring nourishment 
+                  to your body, soul, and mind. We use a perfect mix of nature's bounty and modern science 
+                  to create custom treatments that fit your needs. Whether you're here for a refreshing massage, 
+                  a revitalizing facial, or any of our diverse spa services, our purpose is to help you escape life's daily grind 
+                  and leave you 
+                  feeling dazzling and refreshed. We're here to guide you on your journey to a healthier, happier, and more 
+                  radiant you. So, step into our world of tranquility and rejuvenation where you'll leave feeling brand new 
+                  and glowing from the
+                   inside out!
+                            </p>
+               <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                   <i class="fas fa-phone-alt"></i>
+                   <p>+91 9912232487</p>
+               </div>
+           </div>
+
+           <!-- Right Side: Image -->
+           <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+               <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD//items/V_1740732683674_1.jpg" alt="Salon and Beauty">
+           </div>
+       </div>
+   </section>
+   
+   <!-- Gallery Section -->
+   <section id="gallery">
+    <div class="parallax-section" data-aos="zoom-in" data-aos-delay="300"
+        style="background-image: url('https://res.cloudinary.com/dpaqmxses/image/upload/v1743426535/2024-01-29_vdlvzd.jpg')">
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+            <h2 class="stylish-heading" data-aos="fade-up">
+                <span>Recommended Styles</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="parallax-section offer-banner bottom-image" data-aos="fade-up" data-aos-delay="400"
+        style="background-image: url('https://res.cloudinary.com/dpaqmxses/image/upload/v1743140520/bearded-man_1303-5221_kzmnkh.jpg')">
+        <h1 data-aos="fade-up" data-aos-delay="500">
+            Your hair and beauty are the reflections of your confidence—wear them with pride and elegance.
+        </h1>
+        <a data-aos="fade-up" data-aos-delay="600" href="#footer">Book Now</a>
+    </div>
+</section>  
+
+   <!-- Why Choose Us Section -->
+   <section>
+       <div class="why-choose-us">
+           <div class="section-heading" data-aos="fade-up">
+               <h2 class="why-choose-head">Why Choose Glamour Haven?</h2>
+               <p>Your One-Stop Destination for Hair & Beauty Excellence</p>
+           </div>
+
+           <div class="dual-services">
+               <!-- Salon Services Column -->
+               <div class="service-column" data-aos="fade-right" data-aos-delay="200">
+                   <div class="service-tabs">
+                       <button class="tab-btn active">Salon Services</button>
+                   </div>
+                   <div class="features-grid">
+                       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                           <i class="fas fa-scissors salon-icon feature-icon"></i>
+                           <h3>Expert Hair Styling</h3>
+                           <p>From precision cuts to creative coloring by certified stylists</p>
+                       </div>
+                       <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                           <i class="fas fa-spa salon-icon feature-icon"></i>
+                           <h3>Scalp Treatments</h3>
+                           <p>Specialized therapies for hair health and growth</p>
+                       </div>
+                       <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                           <i class="fas fa-clock salon-icon feature-icon"></i>
+                           <h3>Flexible Appointments</h3>
+                           <p>Open 7 days a week with late-night bookings</p>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Beauty Services Column -->
+               <div class="service-column" data-aos="fade-left" data-aos-delay="200">
+                   <div class="service-tabs">
+                       <button class="tab-btn active">Beauty Services</button>
+                   </div>
+                   <div class="features-grid">
+                       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                           <i class="fas fa-hand-sparkles beauty-icon feature-icon"></i>
+                           <h3>Luxury Spa Treatments</h3>
+                           <p>Facials, massages, and full-body therapies</p>
+                       </div>
+                       <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                           <i class="fas fa-paint-brush beauty-icon feature-icon"></i>
+                           <h3>Professional Makeup</h3>
+                           <p>Bridal, editorial, and special occasion artistry</p>
+                       </div>
+                       <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                           <i class="fas fa-prescription-bottle beauty-icon feature-icon"></i>
+                           <h3>Premium Products</h3>
+                           <p>Medical-grade skincare and organic cosmetics</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Payment Section -->
+   <section class="payment-container" data-aos="fade-up">
+       
+
+       <div class="instructions" data-aos="fade-up" data-aos-delay="200">
+           <h3>Instructions:</h3>
+           <ul>
+               <li>Scan the QR code below to make a payment.</li>
+               <li>Ensure you enter the correct amount.</li>
+               <li>If you're using Google Pay, PhonePe, or Paytm, make sure the app is open before scanning.</li>
+           </ul>
+       </div>
+
+       <div class="payment-details" data-aos="fade-up" data-aos-delay="100">
+        <p><strong>Name:</strong> Uppala Arun Kumar</p>
+        <p><strong>Phone Number:</strong> +91 9912232487</p>
+       </div>
+
+       <div class="qr-code" data-aos="zoom-in" data-aos-delay="300">
+           <h3>Scan QR Code</h3>
+           <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD/CUST1635/paymentQR/V_1740736202904_1.jpg" alt="QR Code">
+       </div>
+
+       <div class="payment-methods" data-aos="fade-up" data-aos-delay="400">
+           <img src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw" alt="PhonePe" class="payment-method">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" class="paytm-image" alt="Paytm" class="payment-method">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Google Pay" class="payment-method">
+       </div>
+   </section>
+
+   <!-- Footer -->
+<footer id="footer" class="footer-section">
+       <div class="footer">
+           <div class="footer-content">
+               <div class="footer-left" >
+                   <div class="footer-left-content">
+                       <h1>Experience the excellence of Salon U Has To Offer…</h1>
+                       <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1743488588/background2_k3zt7w.jpg" />
+                       <div class="contact-info">
+                           <p class="call-us">Ready to book your appointment?</p>
+                           <p class="phone">📞 +91 9912232487</p>
+                       </div>
+                   </div>
+                  
+                   <div class="business-hours" >
+                       <h3><i class="fas fa-clock fa-icon"></i> Working Hours</h3>
+                       <p><strong>Monday - Sunday:</strong> 08:00AM - 22:00 PM</p>
+                   </div>
+               </div>
+               
+               <div class="footer-right-form" id="appointmentForm">
+                <form class="appointment-form" id="appointmentForm" action="https://formsubmit.co/jaguarunisexsalon@gmail.com"
+                method="POST" target="hidden_iframe"> 
+                    <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="file:///C:/Users/YourName/Desktop/yourproject/thankyou.html">
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <label>Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="hair_styling">Hair Styling</option>
+                                <option value="skin_grooming">Skin & Grooming</option>
+                                <option value="therapy">Therapy</option>
+                                <option value="massage">Massage</option>
+                                <option value="tattoos">Tattoos</option>
+                                <option value="other">Other</option>
+                            </select>
+                            
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Select Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="time">Select Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Special Requests</label>
+                            <textarea id="message" name="message" placeholder="Any special requirements..." ></textarea>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Confirm Booking
+                    </button>
+                </form>
+        
+                <!-- Thank You Message -->
+                <div id="contactThankYouMessage" class="thank-you-message">
+                    <p>Thank you for booking! Your appointment is confirmed.</p>
+                </div>
+          
+               </div>
+           </div>
+       </div>
+
+       <div class="bottom-footer">
+           <div class="footer-container">
+               <div class="footer-column" >
+                   <h4>About Us</h4>
+                   <p>Jaguar Unisex Salon & Beauty Shop offers premium services for your hair, skin, and beauty needs with over 10 years of professional experience.</p>
+               </div>
+               <div class="footer-column" >
+                   <h4>Contact Info</h4>
+                   <div class="contact-details">
+                    <p>  <i class="fas fa-user"></i>Uppala Arun Kumar</p>
+                       <p><i class="fas fa-map-marker-alt"></i>Manjeera pipeline road, Madinaguda opp vignan school, Mythri enclave, ,TELANGANA,500049</p>
+                       <p><i class="fas fa-phone"></i> +91 9912232487</p>
+                       <p class="notranslate"><i class="fas fa-envelope"></i> <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaguarunisexsalon@gmail.com&su=Hello&body=This is a test message." 
+                        class="gmail-link" target="_blank">
+                        jaguarunisexsalon@gmail.com
+                     </a></span></p>
+                   </div>
+               </div>
+               <div class="footer-column" >
+                   <h4>Newsletter</h4>
+                   <p>Subscribe to receive updates and special offers</p>
+                   <form action="https://formsubmit.co/jaguarunisexsalon@gmail.com" method="POST">
+                    <div class="subscribe-box">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </div>
+                </form>
+                
+               </div>
+           </div>
+
+           <div class="social-links">
+            <a href="https://www.instagram.com/jaguarunisexsalons?igsh=Z21mbmZoOGRndHpp" target="_blank" aria-label="Instagram"  ><i class="fab fa-instagram"></i></a>
+               <a href="https://facebook.com" target="_blank" aria-label="Facebook"  ><i class="fab fa-facebook-f"></i></a>
+             
+               <a href="https://youtube.com" target="_blank" aria-label="YouTube" ><i class="fab fa-youtube"></i></a>
+           </div>
+
+           <div class="copyright">
+               &copy; 2025 Jaguar Unisex Saloon | All Rights Reserved 
+           </div>
+       </div>
+   </footer>
+
+   <!-- WhatsApp Button -->
+   <a href="https://wa.me/+919912232487?text=HELLO" target="_blank" class="whatsapp-btn">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+   </a>
+
+   <!-- Scripts -->
+   <script src="../js/navbar.js"></script>
+   <script src="../js/footer.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+   <div id="google_translate_element"></div>
+   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   <!-- Initialize AOS -->
+   <script>
+       // Initialize AOS
+       AOS.init({
+           duration: 800,
+           easing: 'ease-in-out',
+           once: true,
+           offset: 100
+       });
+       
+       // Smooth scrolling for anchor links
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+               
+               document.querySelector(this.getAttribute('href')).scrollIntoView({
+                   behavior: 'smooth'
+               });
+           });
+       });
+   </script>
+</body>
+</html>

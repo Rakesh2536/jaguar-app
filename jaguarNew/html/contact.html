@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Jaguar Unisex Salon</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-content">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD/CUST1635/logo/V_1740732659362_1.jpg" alt="Salon Logo">
+            <div class="brand-wrapper">
+                <span class="shop-name notranslate">JAGUAR UNISEX</span>
+                <span class="shop-tagline notranslate">HAIR & BEAUTY SALOON</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Navigation List -->
+        <ul class="nav-list" id="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li id="nav-item-service"><a>Services</a>
+                <ul class="dropdown">
+                    <li><a>Men</a>
+                        <ul class="submenu">
+                            <li><a href="hairservices.html">Hair Services</a></li>
+                            <li><a href="skin&grooming.html">Skin & Grooming</a></li>
+                            <li><a href="specialservices.html">Special Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Women</a>
+                        <ul class="submenu">
+                            <li><a href="skin&groomingwomen.html">Skin & Grooming</a></li>
+                            <li><a href="haircarefrwomen.html">Hair Styling</a></li>
+                            <li><a href="specialservicesfrwomen.html">Special Services</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="ourbranches.html">Our Branches</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li onclick="onSchedule()"><a href="#footer">Schedule</a></li>
+
+            <!-- Custom Language Selector -->
+            <li class="nav-item">
+                <div class="translate-container notranslate">
+                    <button class="translate-btn" id="selected-lang" onclick="toggleDropdown()">
+                        English
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button onclick="translateLanguage('en','English')">English</button>
+                        <button onclick="translateLanguage('te','Telugu')">Telugu</button>
+                        <button onclick="translateLanguage('sa','Sanskrit')">Sanskrit</button>
+                        <button onclick="translateLanguage('hi','Hindi')">Hindi</button>
+                    </div>
+                </div>
+            </li>
+           
+
+        </ul>
+    </div>
+</nav>
+
+    
+<div class="contact-container">
+    <div class="contact-header">
+        <h1>Connect With Us</h1>
+        <p>We're here to help and answer any questions</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="contact-method">
+                <h3><i class="fas fa-map-marker-alt fa-icon"></i>Our Location</h3>
+                <p>Manjeera Pipeline Road</p>
+                <p>Madinaguda, Opp. Vignan School</p>
+                <p>Mythri Enclave</p>
+                <p>TELANGANA, 500049</p>
+            </div>
+
+            <div class="contact-method">
+                <h3><i class="fas fa-phone fa-icon"></i>Call Us</h3>
+                <p>Main: +91 9912232487</p>
+                <p>Support: +91 9912232487</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-method">
+                <h3><i class="fas fa-envelope fa-icon"></i>Write Us</h3>
+                <p>Main: jaguarunisexsalon@gmail.com</p>
+                <p>Support: jaguarunisexsalon@gmail.com</p>
+            </div>
+
+            <div class="business-hours1">
+                <h3><i class="fas fa-clock fa-icon"></i>Working Hours</h3>
+                <p>Monday - Sunday: 08:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Map (Clickable Image) -->
+    <div class="map-container" data-url="https://www.google.com/maps?q=17.4889651,78.3462071&z=15" onclick="navigateToMap(this)">
+        <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1743227442/Jaguar_Unisex_Hair_Beauty_Salon_-_Google_Maps_-_Google_Chrome_29-03-2025_11_19_28_bbrnkd.jpg" alt="Jaguar Salon Location Map">
+    </div>
+</div>
+
+<script>
+    function navigateToMap(element) {
+        const url = element.getAttribute("data-url");
+        window.open(url, "_blank");
+    }
+</script>
+
+<footer id="footer" class="footer-section">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left" >
+                <div class="footer-left-content">
+                    <h1>Experience the excellence of Salon U Has To Offer…</h1>
+                    <div class="contact-info">
+                        <p class="call-us">Ready to book your appointment?</p>
+                        <p class="phone">📞 +91 9912232487</p>
+                    </div>
+                </div>
+               
+                <div class="business-hours" >
+                    <h3><i class="fas fa-clock fa-icon"></i> Working Hours</h3>
+                    <p><strong>Monday - Sunday:</strong> 08:00AM - 22:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-right-form" >
+             <form class="appointment-form" id="appointmentForm" action="https://formsubmit.co/jaguarunisexsalon@gmail.com"
+             method="POST" target="hidden_iframe"> 
+                 <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+
+                 <input type="hidden" name="_captcha" value="false">
+                 <input type="hidden" name="_next" value="file:///C:/Users/YourName/Desktop/yourproject/thankyou.html">
+
+                 <div class="form-grid">
+                     <div class="form-group">
+                         <label>Full Name</label>
+                         <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                         <i class="fas fa-user"></i>
+                     </div>
+                     <div class="form-group">
+                         <label>Email</label>
+                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                         <i class="fas fa-envelope"></i>
+                     </div>
+                     <div class="form-group">
+                         <label>Phone</label>
+                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                         <i class="fas fa-phone"></i>
+                     </div>
+                     <div class="form-group">
+                         <label>Service</label>
+                         <select id="service" name="service" required>
+                             <option value="" disabled selected>Select Service</option>
+                             <option value="hair_styling">Hair Styling</option>
+                             <option value="skin_grooming">Skin & Grooming</option>
+                             <option value="therapy">Therapy</option>
+                             <option value="massage">Massage</option>
+                             <option value="tattoos">Tattoos</option>
+                             <option value="other">Other</option>
+                         </select>
+                         
+                         <i class="fas fa-spa"></i>
+                     </div>
+                     <div class="form-group">
+                         <label for="date">Select Date</label>
+                         <input type="date" id="date" name="date" required>
+                     </div>
+                 
+                     <div class="form-group">
+                         <label for="time">Select Time</label>
+                         <input type="time" id="time" name="time" required>
+                     </div>
+                     <div class="form-group">
+                         <label>Special Requests</label>
+                         <textarea id="message" name="message" placeholder="Any special requirements..." ></textarea>
+                         <i class="fas fa-comment-dots"></i>
+                     </div>
+                 </div>
+                 <button type="submit" class="submit-btn">
+                     <i class="fas fa-paper-plane"></i>
+                     Confirm Booking
+                 </button>
+             </form>
+     
+             <!-- Thank You Message -->
+             <div id="contactThankYouMessage" class="thank-you-message">
+                 <p>Thank you for booking! Your appointment is confirmed.</p>
+             </div>
+       
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <div class="footer-container">
+            <div class="footer-column" >
+                <h4>About Us</h4>
+                <p>Jaguar Unisex Salon & Beauty Shop offers premium services for your hair, skin, and beauty needs with over 10 years of professional experience.</p>
+            </div>
+            <div class="footer-column" >
+                <h4>Contact Info</h4>
+                <div class="contact-details">
+                 <p>  <i class="fas fa-user"></i>Uppala Arun Kumar</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Manjeera pipeline road, Madinaguda opp vignan school, Mythri enclave, ,TELANGANA,500049</p>
+                    <p><i class="fas fa-phone"></i> +91 9912232487</p>
+                    <p class="notranslate"><i class="fas fa-envelope"></i> <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaguarunisexsalon@gmail.com&su=Hello&body=This is a test message." 
+                        class="gmail-link" target="_blank">
+                        jaguarunisexsalon@gmail.com
+                     </a></span></p>
+                </div>
+            </div>
+            <div class="footer-column" >
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates and special offers</p>
+                <form action="https://formsubmit.co/jaguarunisexsalon@gmail.com" method="POST">
+                 <div class="subscribe-box">
+                     <input type="email" name="email" placeholder="Your email address" required>
+                     <button type="submit" class="subscribe-btn">Subscribe</button>
+                 </div>
+             </form>
+             
+            </div>
+        </div>
+
+        <div class="social-links">
+         <a href="https://www.instagram.com/jaguarunisexsalons?igsh=Z21mbmZoOGRndHpp" target="_blank" aria-label="Instagram"  ><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"  ><i class="fab fa-facebook-f"></i></a>
+          
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube" ><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2025 Jaguar Unisex Saloon | All Rights Reserved 
+        </div>
+    </div>
+</footer>
+    <a href="https://wa.me/+919912232487?text=HELLO" target="_blank" class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      </a>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+
+    <div id="google_translate_element"></div>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

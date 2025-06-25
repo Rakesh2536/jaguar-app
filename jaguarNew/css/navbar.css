@@ -1,0 +1,586 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #f9f6f0;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    transition: all 0.4s ease;
+    z-index: 1000;
+    background: transparent;
+    background: rgba(244, 247, 250, 0.98);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 15px rgba(26, 37, 47, 0.1);
+    top:0px;
+  
+    
+}
+
+
+.navbar-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.logo img {
+  width: 80px;
+  height: 80px;
+ filter: brightness(2);
+}
+
+
+/* Branding */
+.brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.shop-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #363636;
+}
+
+
+
+.shop-tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #363636;
+}
+
+
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.nav-list li {
+    position: relative;
+    padding: 5px;
+    list-style: none;
+    
+}
+
+.nav-list a {
+  color: #2c3e2b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+   
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a{
+  text-align: start;
+  
+}
+
+
+
+/* Dropdown Indicators */
+#nav-item-service > a:after,
+.translate-btn:after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.7em;
+    margin-left: 8px;
+    vertical-align: middle;
+    color: #4a6741;
+    transition: transform 0.3s ease;
+}
+
+
+ #nav-item-service > a:after {
+    color: #4a6741;
+}
+.dropdown li > a:after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+    font-size: 0.8em;
+    color: #8ba888;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Hover Effects */
+.nav-list li:hover > a:after {
+    color: #1c4e0d;
+}
+
+.dropdown li:hover > a:after {
+    transform: translateX(3px);
+    color: #1c4e0d;
+}
+
+
+  /* Dropdown Menus */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+/* Submenu Positioning */
+.submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 200px;
+  background: white;
+  border-left: 2px solid #4a6741;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1002;
+}
+
+
+.dropdown a {
+    color: #4a6741;
+}
+
+.submenu a {
+    color: #4a6741;
+}
+
+.submenu li > a:after {
+  content: '';
+}
+
+/* Hover States */
+#nav-item-service:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.dropdown li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  left: 100%;
+}
+
+/* Adjust main dropdown items to have relative positioning */
+.dropdown > li {
+  position: relative;
+}
+
+/* Add hover background for better UX */
+.dropdown li:hover {
+  background: #f8faf7;
+}
+
+
+
+/* Add arrow for parent items */
+.dropdown li.has-submenu > a:after {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: right;
+  font-size: 0.8em;
+  color: #8ba888;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for submenu items */
+.submenu li:hover {
+  background: #f0f7f4;
+}
+.nav-list li:hover .dropdown,
+.dropdown li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+/* Language Selector */
+.translate-container {
+    position: relative;
+}
+
+.translate-btn {
+    background: #fff;
+    color: #4a6741;
+    border: none;
+    padding: 10px 35px 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #4a6741;
+    border-color: #4a6741;
+    border-style: solid;
+}
+
+.translate-container:hover .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+    /* top: 100%; */
+    color: #4a6741;
+    border-color: #4a6741;
+    border-style: solid;
+}
+
+.language-dropdown button {
+    width: 100%;
+    padding: 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #4a6741;
+    transition: 0.3s;
+}
+
+.language-dropdown button:hover {
+    background: #f0f7f4;
+}
+
+
+
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 1003;
+    transition: all 0.3s ease;
+    
+  
+  }
+  
+  .menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #4a6741;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hamburger Animation */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    background-color: #4a6741;
+  }
+  
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+    background-color: #4a6741;
+  }
+
+
+
+
+/* Mobile Dropdown Fixes */
+@media (max-width: 1024px) {
+
+    .language-dropdown {
+        position: absolute;
+        top: -160px; /* Moves it right above the parent */
+        right: auto;
+        left: 200px;
+       transform: translateX(-50%);
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        width: 160px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    .nav-list {
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+        transition: all 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .logo {
+        width: 250px;
+        
+      }
+ .brand-wrapper {
+    margin-left: 10px;
+ }
+      .shop-name {
+        font-size: 1.2rem;
+    
+    }
+    .shop-tagline {
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list li {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-list a {
+        color: #4a6741 ;
+        padding: 12px 15px;
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Dropdown Handling */
+    .dropdown {
+        position: static !important;
+        transform: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .dropdown.active {
+        max-height: 1000px;
+    }
+
+    .submenu {
+        position: static !important;
+        border-left: none !important;
+        padding-left: 20px !important;
+        margin: 5px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        transform: none !important;
+
+    }
+      
+
+       
+    .submenu.active {
+        max-height: 1000px;
+        border-left: 3px solid #4a6741 !important;
+    }
+
+    /* Dropdown Indicators */
+    #nav-item-service > a:after,
+    .dropdown li > a:after {
+        content: '\f078' !important;
+        float: right;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown li.active > a:after {
+        transform: rotate(180deg);
+    }
+
+    /* Hamburger Color Fix */
+   
+    .menu-toggle .bar {
+        background-color: #4a6741;
+    }
+}
+
+  
+/* Custom Translate Button */
+.translate-container {
+    position: relative;
+    z-index: 1002; /* Higher than navbar but lower than dropdown */
+}
+
+  
+  .translate-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    color: #2c3e2b;
+  }
+
+  
+  /* .translate-btn:hover {
+    background: #939292;
+  } */
+  
+  /* Language Dropdown */
+  .language-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px; /* Moves dropdown above navbar */
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    z-index: 1003; /* Ensure dropdown appears above navbar */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+  
+  /* @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  } */
+  
+  .language-dropdown button {
+    background: none;
+    border: none;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .language-dropdown button:hover {
+    background: #fff;
+    color: green;
+  }
+  
+  
+  /* Hide Google Translate Branding Completely */
+  .goog-te-banner-frame, .goog-logo-link, .goog-te-gadget span, .goog-te-balloon-frame, 
+  #google_translate_element select, .goog-te-gadget {
+    display: none !important;
+  }
+  
+  
+  
+  /* Hide the Google Translate banner */
+  .goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  /* Hide the Google Translate branding and unnecessary elements */
+  .goog-logo-link,
+  .goog-te-gadget span,
+  .goog-te-balloon-frame,
+  #google_translate_element select,
+  .goog-te-gadget {
+    display: none !important;
+  }
+  
+  /* Ensure body does not shift down due to hidden banner */
+  body {
+    top: 0px !important;
+  }
+  /* Hide Google Translate banner */
+  .skiptranslate, .goog-te-banner-frame {
+    display: none !important;
+  }
+
+
+
+
+
+
+  
+
+/* Mobile Dropdown Fixes */
+@media (max-width: 1024px) {
+
+  .language-dropdown {
+      position: absolute;
+      top: -160px; /* Moves it right above the parent */
+      right: auto;
+      left: 200px;
+     transform: translateX(-50%);
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 160px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      text-align: center;
+  }
+
+}

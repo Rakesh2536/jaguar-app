@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Services</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/specialservices.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar custom-navbar" id="navbar">
+        <div class="navbar-content">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD/CUST1635/logo/V_1740732659362_1.jpg" alt="Salon Logo">
+                <div class="brand-wrapper">
+                    <span class="shop-name notranslate">JAGUAR UNISEX</span>
+                    <span class="shop-tagline notranslate">HAIR & BEAUTY SALOON</span>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    
+            <!-- Navigation List -->
+            <ul class="nav-list" id="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li id="nav-item-service"><a>Services</a>
+                    <ul class="dropdown">
+                        <li><a>Men</a>
+                            <ul class="submenu">
+                                <li><a href="hairservices.html">Hair Services</a></li>
+                                <li><a href="skin&grooming.html">Skin & Grooming</a></li>
+                                <li><a href="specialservices.html">Special Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Women</a>
+                            <ul class="submenu">
+                                <li><a href="skin&groomingwomen.html">Skin & Grooming</a></li>
+                                <li><a href="haircarefrwomen.html">Hair Styling</a></li>
+                                <li><a href="specialservicesfrwomen.html">Special Services</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="ourbranches.html">Our Branches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li onclick="onSchedule()"><a href="#footer">Schedule</a></li>
+    
+                <!-- Custom Language Selector -->
+                <li class="nav-item">
+                    <div class="translate-container notranslate">
+                        <button class="translate-btn" id="selected-lang" onclick="toggleDropdown()">
+                            English
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <button onclick="translateLanguage('en','English')">English</button>
+                            <button onclick="translateLanguage('te','Telugu')">Telugu</button>
+                            <button onclick="translateLanguage('sa','Sanskrit')">Sanskrit</button>
+                            <button onclick="translateLanguage('hi','Hindi')">Hindi</button>
+                        </div>
+                    </div>
+                </li>
+               
+    
+            </ul>
+        </div>
+    </nav>
+   
+
+
+
+    <section class="pre-groom-packages">
+        <h1 class="hero-head">Pre-Groom Packages</h1>
+        
+        <div class="package-container">
+            <div class="package">
+                <div class="sitting-sticker">Sitting 1</div>
+                <div class="price-box">
+                    <h2>Basic Package</h2>
+                </div>
+               
+                <ul class="ul-container">
+                    <li class="li-item"><i class="fas fa-check"></i>Threading</li>
+                    <li  class="li-item"><i class="fas fa-check"></i>Haircut</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Facial</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Hair Spa</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Pedicure</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Manicure</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Waxing (Full Arms, Under Arms, Half Legs)</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Bleach (Face, Neck)</li>
+                </ul>
+            </div>
+  
+            <div class="package package2">
+                <div class="sitting-sticker">Sitting 2</div>
+                <div class="price-box">
+                    <h2>Standard Package</h2>
+                </div>
+                
+                <ul class="ul-container">
+                    <li class="li-item"><i class="fas fa-check"></i>Threading</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Haircut</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Facial</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Hair Spa</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Pedicure</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Manicure</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Waxing (Full Arms, Under Arms, Full Legs)</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Bleach (Face, Neck, Back)</li>
+                </ul>
+               
+            </div>
+  
+            <div class="package premium">
+          
+                <div class="sitting-sticker">Sitting 4</div>
+                <div class="price-box">
+                    <h2>Premium Package</h2>
+                </div>
+                
+                <ul class="ul-container">
+                    <li class="li-item"><i class="fas fa-check"></i>Threading</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Haircut</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Facial</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Nourishment</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Full Body Wax</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Full Body De-Tan Bleach</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Body Polishing</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Hair Spa</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Pedicure</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Manicure</li>
+                    <li class="li-item"><i class="fas fa-check"></i>Bleach (Face, Neck, Back)</li>
+                </ul>
+              
+            </div>
+        </div>
+      </section>
+
+
+      <section class="special-section">
+        <h2 class="section-title">THERAPIES</h2>
+        <div class="special-service-row">
+            <div class="text-content">
+                <h2>Traditional Thai Massage</h2>
+                <p>The traditional Thai dry therapy combines elegant elements of Yoga, shiatsu & acupressure, working with the energy pathways of the body & the therapy points that are locked along these lines. The body is massaged to release tension working on the vital energy points and chakras around the body.</p>
+               
+            </div>
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Traditional Thai Massage">
+            </div>
+        </div>
+        <div class="special-service-row special-service-row-reverse">
+            <div class="text-content">
+                <h2>Balinese Massage</h2>
+                <p>Balinese massage techniques include acupressure, skin rolling and rolling and flicking, firm and gentle stroking, percussion, and application of essential oils. This deeply relaxes and revitalize body and mind. Benefits include increased flexibility, relief of joint and muscle tension and a balance of the body's energy system.</p>
+              
+            </div>
+            <div class="image-content">
+                <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1742831253/jaguar_6_x_16_in_1_2__page-0015_1_mxmcj0.jpg" alt="Balinese Massage">
+            </div>
+        </div>
+        <div class="special-service-row">
+            <div class="text-content">
+                <h2>Aroma Therapy Massage</h2>
+                <p>This holistic treatment has a profound impact on the body, mind and spirit. Experience the deep state of relaxation with two powerful combinations: Oil and Massage. This treatment ends with a deeply soothing head massage to relieve stress from the mind and body.</p>
+              
+            </div>
+            <div class="image-content">
+                <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1742831880/jaguar_6_x_16_in_1_2__page-0017_iu0pwy.jpg" alt="Aroma Therapy Massage">
+            </div>
+        </div>
+    </section>
+
+    <section class="special-section">
+        <h2 class="section-title">MASSAGES</h2>
+        <div class="special-service-row">
+            <div class="text-content">
+                <h2>Swedish Massage</h2>
+                <p>An advanced form of Aromatherapy, this treatment focuses on using direct medium tissues pressure on muscles connective tissue. It includes techniques like circular pressure applied by the hands and plants, firm kneading, percussion-like tapping, bending and stretching.</p>
+             
+            </div>
+            <div class="image-content">
+                <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1742831182/jaguar_6_x_16_in_1_2__page-0015_dvsetq.jpg" alt="Swedish Massage">
+            </div>
+        </div>
+        <div class="special-service-row special-service-row-reverse">
+            <div class="text-content">
+                <h2>Deep Tissue Massage</h2>
+                <p>Deep-tissue is a specific type of massage therapy that focuses on deeper layers of muscles. The deeper pressure is beneficial in releasing chronic muscle tension. The focus is on the deepest layers of muscle tissue and fascia. Its mild pain that hurts so good. It includes deep finger pressure and slow, firm strokes. Deep tissue massage is used to treat a variety of physical ailments.</p>
+              
+            </div>
+            <div class="image-content">
+                <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1742832220/jaguar_6_x_16_in_1_2__page-0011_bbkyat.jpg" alt="Deep Tissue Massage">
+            </div>
+        </div>
+    </section>
+
+    <section class="foot-reflexology-section">
+        <h2 class="section-title">THAI FOOT REFLEXOLOGY</h2>
+        <div class="image-content">
+            <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1743137891/combined_18_gjwe99.jpg" alt="Thai Foot Reflexology">
+        </div>
+        <div class="text-content">
+            <h3>Thai Foot Reflexology</h3>
+            <p>This traditional Thai dry therapy combines elegant elements of yoga shiatsu & acupressure, working with the energy pathways of the body the therapy points that are locked along these lines. The body is massaged to release tension working on the vital energy points.</p>
+          
+            
+            <h3>Foot Massage With Head And Shoulder Massage</h3>
+            <p>Ancient Thai healing relieves sore muscles, stimulates circulation as well as increases energy flow.</p>
+         
+            
+            <h3>Foot Massage With Back And Shoulder Massage</h3>
+            <p>Ancient Thai healing relieves sore muscles, stimulates circulation as well as increases energy flow.</p>
+         
+            
+            <h3 class="section-title">BEST SELLERS</h3>
+            <div>
+                <h3>Hot Stone Therapy</h3>
+                <p>This relaxing massage uses heated stones to generate energy and create a sense of balance and calm. Stone therapy is a practice which has been used since ancient times as a soothing and healing treatment.</p>
+              
+                
+                <h3>Hot Oil Aroma Spirit Therapy</h3>
+            
+                
+                <h3>Lomi-Lomi</h3>
+               
+                
+                <h3>Shiatsu Therapy</h3>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="therapy-combination-section">
+        <h2>THERAPY COMBINATIONS</h2>
+        <p>60 Min Thai Therapy + 60 Min Aroma Therapy </p>
+        <p>60 Min Thai Therapy + 60 Min Swedish Massage</p>
+        <p>60 Min Thai Therapy + 60 Min Balinese Massage </p>
+        <p>60 Min Thai Therapy + 60 Min Deep Tissue Massage </p>
+        <hr>
+        <p>30 Min Thai Therapy + 60 Min Aroma Therapy </p>
+        <p>30 Min Thai Therapy + 60 Min Swedish Massage </p>
+        <p>30 Min Thai Therapy + 60 Min Balinese Massage </p>
+        <p>30 Min Thai Therapy + 60 Min Deep Tissue Massage </p>
+        <hr>
+        <p>30 Min Foot Reflexology + 60 Min Aroma Therapy </p>
+        <p>30 Min Foot Reflexology + 60 Min Swedish Massage </p>
+        <p>30 Min Foot Reflexology + 60 Min Balinese Massage </p>
+    </section>
+
+    <section class="tattoos-section">
+        <div class="tattoos-text">
+            <h2>TATTOOS & PIERCING</h2>
+            <p>BLACK PER INCH </p>
+            <p>COLOR PER INCH </p>
+            <h3>GET SHINE WITH PIERCING</h3>
+            <p>WARTS REMOVAL - PER WART </p>
+            <p>EAR PIERCING</p>
+        </div>
+        <div class="tattoos-images">
+            <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1742832491/jaguar_6_x_16_in_1_2__page-0012_zoczq1.jpg" alt="Tattoo Art">
+            <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1742832435/jaguar_6_x_16_in_1_2__page-0012_1_nlrohw.jpg" alt="Piercing Example">
+        </div>
+    </section>
+    <footer id="footer" class="footer-section">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-left" >
+                    <div class="footer-left-content">
+                        <h1>Experience the excellence of Salon U Has To Offer…</h1>
+                        <div class="contact-info">
+                            <p class="call-us">Ready to book your appointment?</p>
+                            <p class="phone">📞 +91 9912232487</p>
+                        </div>
+                    </div>
+                   
+                    <div class="business-hours" >
+                        <h3><i class="fas fa-clock fa-icon"></i> Working Hours</h3>
+                        <p><strong>Monday - Sunday:</strong> 08:00AM - 22:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="footer-right-form" >
+                 <form class="appointment-form" id="appointmentForm" action="https://formsubmit.co/jaguarunisexsalon@gmail.com"
+                 method="POST" target="hidden_iframe"> 
+                     <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+ 
+                     <input type="hidden" name="_captcha" value="false">
+                     <input type="hidden" name="_next" value="file:///C:/Users/YourName/Desktop/yourproject/thankyou.html">
+ 
+                     <div class="form-grid">
+                         <div class="form-group">
+                             <label>Full Name</label>
+                             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                             <i class="fas fa-user"></i>
+                         </div>
+                         <div class="form-group">
+                             <label>Email</label>
+                             <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                             <i class="fas fa-envelope"></i>
+                         </div>
+                         <div class="form-group">
+                             <label>Phone</label>
+                             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                             <i class="fas fa-phone"></i>
+                         </div>
+                         <div class="form-group">
+                             <label>Service</label>
+                             <select id="service" name="service" required>
+                                 <option value="" disabled selected>Select Service</option>
+                                 <option value="hair_styling">Hair Styling</option>
+                                 <option value="skin_grooming">Skin & Grooming</option>
+                                 <option value="therapy">Therapy</option>
+                                 <option value="massage">Massage</option>
+                                 <option value="tattoos">Tattoos</option>
+                                 <option value="other">Other</option>
+                             </select>
+                             
+                             <i class="fas fa-spa"></i>
+                         </div>
+                         <div class="form-group">
+                             <label for="date">Select Date</label>
+                             <input type="date" id="date" name="date" required>
+                         </div>
+                     
+                         <div class="form-group">
+                             <label for="time">Select Time</label>
+                             <input type="time" id="time" name="time" required>
+                         </div>
+                         <div class="form-group">
+                             <label>Special Requests</label>
+                             <textarea id="message" name="message" placeholder="Any special requirements..." ></textarea>
+                             <i class="fas fa-comment-dots"></i>
+                         </div>
+                     </div>
+                     <button type="submit" class="submit-btn">
+                         <i class="fas fa-paper-plane"></i>
+                         Confirm Booking
+                     </button>
+                 </form>
+         
+                 <!-- Thank You Message -->
+                 <div id="contactThankYouMessage" class="thank-you-message">
+                     <p>Thank you for booking! Your appointment is confirmed.</p>
+                 </div>
+           
+                </div>
+            </div>
+        </div>
+ 
+        <div class="bottom-footer">
+            <div class="footer-container">
+                <div class="footer-column" >
+                    <h4>About Us</h4>
+                    <p>Jaguar Unisex Salon & Beauty Shop offers premium services for your hair, skin, and beauty needs with over 10 years of professional experience.</p>
+                </div>
+                <div class="footer-column" >
+                    <h4>Contact Info</h4>
+                    <div class="contact-details">
+                     <p>  <i class="fas fa-user"></i>Uppala Arun Kumar</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Manjeera pipeline road, Madinaguda opp vignan school, Mythri enclave, ,TELANGANA,500049</p>
+                        <p><i class="fas fa-phone"></i> +91 9912232487</p>
+                        <p class="notranslate"><i class="fas fa-envelope"></i> <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaguarunisexsalon@gmail.com&su=Hello&body=This is a test message." 
+                            class="gmail-link" target="_blank">
+                            jaguarunisexsalon@gmail.com
+                         </a></span></p>
+                    </div>
+                </div>
+                <div class="footer-column" >
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates and special offers</p>
+                    <form action="https://formsubmit.co/jaguarunisexsalon@gmail.com" method="POST">
+                     <div class="subscribe-box">
+                         <input type="email" name="email" placeholder="Your email address" required>
+                         <button type="submit" class="subscribe-btn">Subscribe</button>
+                     </div>
+                 </form>
+                 
+                </div>
+            </div>
+ 
+            <div class="social-links">
+             <a href="https://www.instagram.com/jaguarunisexsalons?igsh=Z21mbmZoOGRndHpp" target="_blank" aria-label="Instagram"  ><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"  ><i class="fab fa-facebook-f"></i></a>
+              
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube" ><i class="fab fa-youtube"></i></a>
+            </div>
+ 
+            <div class="copyright">
+                &copy; 2025 Jaguar Unisex Saloon | All Rights Reserved 
+            </div>
+        </div>
+    </footer>
+    
+    
+      <a href="https://wa.me/+919912232487?text=HELLO" target="_blank" class="whatsapp-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+<script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+
+    <div id="google_translate_element"></div>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

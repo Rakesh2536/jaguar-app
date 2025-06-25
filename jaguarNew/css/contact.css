@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f6f0;
+    color: #333;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    padding-top: 130px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 2.8rem;
+    color: #3a4a6b; /* Deep blue */
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.contact-header p {
+    color: #5a6b8c;
+    font-size: 1.2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card {
+    padding: 25px;
+    border-left: 4px solid #5a6b8c; /* Medium blue */
+}
+
+.contact-method {
+    margin-bottom: 35px;
+}
+
+.contact-method h3 {
+    color: #3a4a6b; /* Deep blue */
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-method p {
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.8;
+}
+
+.business-hours1 {
+    background: #f0f3f8; /* Light blue-gray */
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #5a6b8c;
+}
+
+/* Map Container */
+.map-container {
+    width: 50%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 40px auto 0;
+    border: 3px solid #5a6b8c;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.map-container:hover {
+    transform: scale(1.05);
+}
+
+.map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.fa-icon {
+    color: #5a6b8c; /* Medium blue */
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .contact-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .map-container {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+
+
+
+
+/* Styling for the floating WhatsApp button */
+.whatsapp-btn {
+  position: fixed; /* Makes the button fixed on the page */
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  z-index: 1000; /* Ensures it appears above other content */
+  width: 60px; /* Button size */
+  height: 60px;
+  background-color: #25d366; /* WhatsApp green color */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 35px; /* Icon size */
+  height: 35px;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+.whatsapp-btn {
+  bottom: 10px;
+  right: 10px;
+  width: 40px; /* Button size */
+  height: 40px;
+}
+.whatsapp-btn img {
+  width: 25px; /* Icon size */
+  height: 25px;
+}
+}

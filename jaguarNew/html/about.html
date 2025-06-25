@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Jaguar Unisex Salon</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar" id="navbar">
+        <div class="navbar-content">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD/CUST1635/logo/V_1740732659362_1.jpg" alt="Salon Logo">
+                <div class="brand-wrapper">
+                    <span class="shop-name notranslate">JAGUAR UNISEX</span>
+                    <span class="shop-tagline notranslate">HAIR & BEAUTY SALOON</span>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    
+            <!-- Navigation List -->
+            <ul class="nav-list" id="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li id="nav-item-service"><a>Services</a>
+                    <ul class="dropdown">
+                        <li><a>Men</a>
+                            <ul class="submenu">
+                                <li><a href="hairservices.html">Hair Services</a></li>
+                                <li><a href="skin&grooming.html">Skin & Grooming</a></li>
+                                <li><a href="specialservices.html">Special Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Women</a>
+                            <ul class="submenu">
+                                <li><a href="skin&groomingwomen.html">Skin & Grooming</a></li>
+                                <li><a href="haircarefrwomen.html">Hair Styling</a></li>
+                                <li><a href="specialservicesfrwomen.html">Special Services</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="ourbranches.html">Our Branches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li onclick="onSchedule()"><a href="#footer">Schedule</a></li>
+    
+                <!-- Custom Language Selector -->
+                <li class="nav-item">
+                    <div class="translate-container notranslate">
+                        <button class="translate-btn" id="selected-lang" onclick="toggleDropdown()">
+                            English
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <button onclick="translateLanguage('en','English')">English</button>
+                            <button onclick="translateLanguage('te','Telugu')">Telugu</button>
+                            <button onclick="translateLanguage('sa','Sanskrit')">Sanskrit</button>
+                            <button onclick="translateLanguage('hi','Hindi')">Hindi</button>
+                        </div>
+                    </div>
+                </li>
+               
+    
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Jaguar Unisex Salon</h1>
+            <p>Where Beauty Meets Perfection</p>
+        </div>
+    </section>
+    
+
+
+    <section class="page-background">
+            <div class="content-wrapper">
+                <h2 class="heading-primary">JAGUAR HAIR, BEAUTY & MAKEUP ACADEMY</h2>
+                <p class="text-content"><span class="highlight">(Since 2015) – ISO 2015-2020 Certified</span></p>
+                <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1743492799/2024-01-28_2_fihtao.jpg" alt="Jaguar Academy" class="academy-photo">
+                <p class="text-content">We provide <span class="highlight">Diploma Courses</span> for <span class="highlight">1, 2, or 3 months</span>, specializing in <span class="highlight">Hair, Beauty, and Makeup</span>. Our certifications are accredited by <span class="highlight">H.A.B.S.D.S (Hair and Beauty Skill Development Society)</span>, registered under the <span class="highlight">Government of India</span>.</p>
+                <p class="text-content"><span class="highlight">International Hair Stylist Mr. Arun Kumar</span> brings <span class="highlight">20 years of experience</span> in the Hair & Beauty Industry, offering <span class="highlight">Basic and Advanced Diploma Certification Courses</span> with <span class="highlight">100% Job Assistance</span>.</p>
+                <p class="text-content"><span class="highlight">No matter your age or qualifications</span>, our diploma programs are accessible to everyone. We teach in <span class="highlight">Telugu, Hindi, and English</span>, making learning comfortable for all.</p>
+            </div>
+  
+    
+    </section>
+
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose">
+            <h2>Why Choose Us?</h2>
+            <div class="why-choose-cards">
+                <div class="card">
+                    <h3>Expert Stylists</h3>
+                    <p>15+ years experience with international training.</p>
+                </div>
+                <div class="card">
+                    <h3>Premium Products</h3>
+                    <p>Using only professional-grade, cruelty-free brands.</p>
+                </div>
+                <div class="card">
+                    <h3>Hygiene & Safety</h3>
+                    <p>Medical-grade sterilization and single-use kits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="our-story-section">
+            <div class="story-container">
+                <div class="story-header">
+                    <h2 class="section-title">
+                   
+                        The Jaguar Unisex Salon Experience
+                    
+                    </h2>
+                    <p class="section-subtitle">Elevating Beauty & Style with Expertise</p>
+                </div>
+        
+                <div class="story-content">
+                    <div class="story-visual">
+                        <div class="founder-image">
+                            <img src="https://visys-aiweb.s3.ap-south-2.amazonaws.com/ai4bazaar/INDIA/HYDERABAD//items/V_1740733671672_5.jpg" alt="Jaguar Unisex Salon Founder">
+                            
+                        </div>
+                        <div class="story-text">
+                            <blockquote>
+                                "At Jaguar Unisex Salon, beauty isn’t just a service—it’s an experience. Step in to discover your best self."
+                            </blockquote>
+                            <div class="core-values">
+                                <div class="value-card">
+                                    <i class="fas fa-heart"></i>
+                                    <h4>Passionate Craft</h4>
+                                    <p>Each cut, style, and treatment is done with perfection.</p>
+                                </div>
+                                <div class="value-card">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    <h4>Client-Centered</h4>
+                                    <p>Personalized services for every individual.</p>
+                                </div>
+                                <div class="value-card">
+                                    <i class="fas fa-gem"></i>
+                                    <h4>Luxury & Comfort</h4>
+                                    <p>Indulge in a space where elegance meets relaxation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                   
+
+                    <div class="journey-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-scissors"></i></div>
+                            <div class="timeline-content">
+                                <h3>Mastering the Art</h3>
+                                <p>From trendsetting cuts to precision styling, every service is crafted with excellence.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-spa"></i></div>
+                            <div class="timeline-content">
+                                <h3>Luxury Self-Care</h3>
+                                <p>Indulge in premium skincare, relaxing spa treatments, and hair nourishment therapies.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-star"></i></div>
+                            <div class="timeline-content">
+                                <h3>Exclusive Grooming</h3>
+                                <p>Men’s & women’s grooming taken to the next level with tailored styling and expert care.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-users"></i></div>
+                            <div class="timeline-content">
+                                <h3>Community & Excellence</h3>
+                                <p>Building lasting relationships with clients through trust, creativity, and dedication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Experts Section -->
+        <section class="experts">
+            <h2>Our Experts</h2>
+            <div class="expert-cards">
+                <div class="expert-card">
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948" alt="Sarah Johnson">
+                    <h3>Sarah Johnson</h3>
+                    <p>Master Stylist - 22 years experience.</p>
+                </div>
+                <div class="expert-card">
+                    <img src="https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257" alt="Michael Chen">
+                    <h3>Michael Chen</h3>
+                    <p>Skin Specialist - CIDESCO Certified.</p>
+                </div>
+                <div class="expert-card">
+                    <img src="https://res.cloudinary.com/dpaqmxses/image/upload/v1743223819/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417_d9ih6m.jpg" alt="Linda Carter">
+                    <h3>Linda Carter</h3>
+                    <p>Hair Color Specialist - 15 years experience in color trends.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Testimonials Section -->
+         <div>
+
+         
+         <h2 class="review-head">Customer Reviews</h2>
+        <div id="reviews">
+            <p>Loading reviews...</p>
+            <div id="loader">Loading...</div>
+        </div>
+    </div>
+    
+        <script>
+            function initMap() {
+                const placeId = "ChIJW3aWjV2SyzsRxWQfJZbgwLw"; // Your Place ID
+                const map = new google.maps.Map(document.createElement("div")); // Dummy map
+                const service = new google.maps.places.PlacesService(map);
+    
+                const reviewsContainer = document.getElementById("reviews");
+                const loader = document.getElementById("loader");
+    
+                // Show loader before making the request
+                loader.style.display = "block";
+                reviewsContainer.innerHTML = "";  // Clear previous content
+    
+                service.getDetails(
+                    { placeId: placeId, fields: ["reviews"] },
+                    (place, status) => {
+                        loader.style.display = "none"; // Hide loader once response is received
+    
+                        if (status === google.maps.places.PlacesServiceStatus.OK) {
+                            if (place.reviews && place.reviews.length > 0) {
+                                place.reviews.forEach(review => {
+                                    const reviewElement = document.createElement("div");
+                                    reviewElement.classList.add("review");
+                                    
+                                    // Adding review content
+                                    reviewElement.innerHTML = `
+                                          <img class="image" src="${review.profile_photo_url}" alt="Reviewer Image">
+                                        <div class="author">${review.author_name}</div>
+                                        <div class="rating">${"★".repeat(review.rating)} (${review.rating})</div>
+                                        <div class="text">${review.text}</div>
+                                    `;
+    
+                                    reviewsContainer.appendChild(reviewElement);
+                                });
+                            } else {
+                                reviewsContainer.innerHTML = "No reviews available.";
+                            }
+                        } else {
+                            if (status === google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT) {
+                                reviewsContainer.innerHTML = "You have exceeded your daily quota for API requests.";
+                            } else if (status === google.maps.places.PlacesServiceStatus.REQUEST_DENIED) {
+                                reviewsContainer.innerHTML = "Access to the API was denied. Please check your API key.";
+                            } else if (status === google.maps.places.PlacesServiceStatus.INVALID_REQUEST) {
+                                reviewsContainer.innerHTML = "The request was invalid. Please check your parameters.";
+                            } else {
+                                reviewsContainer.innerHTML = "Failed to load reviews.";
+                            }
+                            console.error("Error fetching reviews:", status);
+                        }
+                    }
+                );
+            }
+    
+            window.onload = () => {
+                if (typeof google !== "undefined") {
+                    initMap();
+                } else {
+                    console.error("Google Maps API failed to load.");
+                }
+            };
+        </script>
+    
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClGWuI6NcfEzhRsGc6XYjItt_qlO06M9o&libraries=places&callback=initMap" async defer></script>
+    
+
+      
+        <footer id="footer" class="footer-section">
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-left" >
+                        <div class="footer-left-content">
+                            <h1>Experience the excellence of Salon U Has To Offer…</h1>
+                            <div class="contact-info">
+                                <p class="call-us">Ready to book your appointment?</p>
+                                <p class="phone">📞 +91 9912232487</p>
+                            </div>
+                        </div>
+                       
+                        <div class="business-hours" >
+                            <h3><i class="fas fa-clock fa-icon"></i> Working Hours</h3>
+                            <p><strong>Monday - Sunday:</strong> 08:00AM - 22:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-right-form" >
+                     <form class="appointment-form" id="appointmentForm" action="https://formsubmit.co/jaguarunisexsalon@gmail.com"
+                     method="POST" target="hidden_iframe"> 
+                         <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+     
+                         <input type="hidden" name="_captcha" value="false">
+                         <input type="hidden" name="_next" value="file:///C:/Users/YourName/Desktop/yourproject/thankyou.html">
+     
+                         <div class="form-grid">
+                             <div class="form-group">
+                                 <label>Full Name</label>
+                                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                 <i class="fas fa-user"></i>
+                             </div>
+                             <div class="form-group">
+                                 <label>Email</label>
+                                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                 <i class="fas fa-envelope"></i>
+                             </div>
+                             <div class="form-group">
+                                 <label>Phone</label>
+                                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                                 <i class="fas fa-phone"></i>
+                             </div>
+                             <div class="form-group">
+                                 <label>Service</label>
+                                 <select id="service" name="service" required>
+                                     <option value="" disabled selected>Select Service</option>
+                                     <option value="hair_styling">Hair Styling</option>
+                                     <option value="skin_grooming">Skin & Grooming</option>
+                                     <option value="therapy">Therapy</option>
+                                     <option value="massage">Massage</option>
+                                     <option value="tattoos">Tattoos</option>
+                                     <option value="other">Other</option>
+                                 </select>
+                                 
+                                 <i class="fas fa-spa"></i>
+                             </div>
+                             <div class="form-group">
+                                 <label for="date">Select Date</label>
+                                 <input type="date" id="date" name="date" required>
+                             </div>
+                         
+                             <div class="form-group">
+                                 <label for="time">Select Time</label>
+                                 <input type="time" id="time" name="time" required>
+                             </div>
+                             <div class="form-group">
+                                 <label>Special Requests</label>
+                                 <textarea id="message" name="message" placeholder="Any special requirements..." ></textarea>
+                                 <i class="fas fa-comment-dots"></i>
+                             </div>
+                         </div>
+                         <button type="submit" class="submit-btn">
+                             <i class="fas fa-paper-plane"></i>
+                             Confirm Booking
+                         </button>
+                     </form>
+             
+                     <!-- Thank You Message -->
+                     <div id="contactThankYouMessage" class="thank-you-message">
+                         <p>Thank you for booking! Your appointment is confirmed.</p>
+                     </div>
+               
+                    </div>
+                </div>
+            </div>
+     
+            <div class="bottom-footer">
+                <div class="footer-container">
+                    <div class="footer-column" >
+                        <h4>About Us</h4>
+                        <p>Jaguar Unisex Salon & Beauty Shop offers premium services for your hair, skin, and beauty needs with over 10 years of professional experience.</p>
+                    </div>
+                    <div class="footer-column" >
+                        <h4>Contact Info</h4>
+                        <div class="contact-details">
+                         <p>  <i class="fas fa-user"></i>Uppala Arun Kumar</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Manjeera pipeline road, Madinaguda opp vignan school, Mythri enclave, ,TELANGANA,500049</p>
+                            <p><i class="fas fa-phone"></i> +91 9912232487</p>
+                            <p class="notranslate"><i class="fas fa-envelope"></i> <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaguarunisexsalon@gmail.com&su=Hello&body=This is a test message." 
+                                class="gmail-link" target="_blank">
+                                jaguarunisexsalon@gmail.com
+                             </a></span></p>
+                        </div>
+                    </div>
+                    <div class="footer-column" >
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to receive updates and special offers</p>
+                        <form action="https://formsubmit.co/jaguarunisexsalon@gmail.com" method="POST">
+                         <div class="subscribe-box">
+                             <input type="email" name="email" placeholder="Your email address" required>
+                             <button type="submit" class="subscribe-btn">Subscribe</button>
+                         </div>
+                     </form>
+                     
+                    </div>
+                </div>
+     
+                <div class="social-links">
+                 <a href="https://www.instagram.com/jaguarunisexsalons?igsh=Z21mbmZoOGRndHpp" target="_blank" aria-label="Instagram"  ><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"  ><i class="fab fa-facebook-f"></i></a>
+                  
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube" ><i class="fab fa-youtube"></i></a>
+                </div>
+     
+                <div class="copyright">
+                    &copy; 2025 Jaguar Unisex Saloon | All Rights Reserved 
+                </div>
+            </div>
+        </footer>
+        
+        
+          <a href="https://wa.me/+919912232487?text=HELLO" target="_blank" class="whatsapp-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        
+
+           <script src="../js/navbar.js"></script>
+           <script src="../js/script.js"></script>
+           <script src="../js/footer.js"></script>
+           <div id="google_translate_element"></div>
+           <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+           
+</body>
+</html>

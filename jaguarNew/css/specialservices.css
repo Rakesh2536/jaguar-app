@@ -1,0 +1,620 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+:root {
+  --primary: #3a5a78;
+  --secondary: #d4af37;
+  --accent: #e63946;
+  --light: #f8f9fa;
+  --dark: #212529;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f6f0;
+}
+.custom-navbar {
+  background: rgba(244, 247, 250, 0.98);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 15px rgba(26, 37, 47, 0.1);
+  margin-top: 0px;
+  
+}
+
+.custom-navbar .nav-list a {
+  color: #4a6741;
+}
+.custom-navbar .shop-name {
+  color: #4a6741;
+}
+
+
+
+.custom-navbar .shop-tagline {
+  color: #8ba888;
+}
+
+
+      .pre-groom-packages {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        position: relative;
+        overflow: hidden;
+        padding-top: 130px;
+      }
+      
+      .pre-groom-packages::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+        opacity: 0.05;
+        z-index: 0;
+      }
+
+      .hero-head {
+        color: var(--primary);
+        margin-bottom: 40px;
+        font-size: 2.8em;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .hero-head::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background: var(--secondary);
+        margin: 20px auto;
+        border-radius: 2px;
+      }
+
+      .package-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .package {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        overflow: hidden;
+        border-top: 8px solid var(--primary);
+       
+      }
+      .package2 {
+        border-top: 8px solid #2e8b57;
+
+      }
+
+
+
+      .package:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+      }
+
+      .package h2 {
+        color: white;
+        margin-bottom: 25px;
+        font-size: 1.8em;
+        font-weight: 700;
+        position: relative;
+      }
+      
+      .package h2::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: white;
+        margin: 15px auto;
+        border-radius: 2px;
+      }
+
+      .sitting-sticker {
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+        background: var(--accent);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 0 5px 20px rgba(230, 57, 70, 0.4);
+        z-index: 3;
+        border: 3px dashed rgba(255,255,255,0.3);
+        font-size: 1.1em;
+        text-align: center;
+        padding: 10px;
+        line-height: 1.2;
+        transform: rotate(15deg);
+      }
+      
+      .sitting-sticker::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        border: 2px dashed rgba(255,255,255,0.3);
+        border-radius: 50%;
+      }
+
+      .price-box {
+        background: linear-gradient(135deg, var(--primary) 0%, #4a6b8a 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 25px 0;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .price-box::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #4a6b8a;
+      }
+
+      .ul-container {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        margin: 30px 0;
+      }
+
+      .li-item {
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.95em;
+      }
+
+      .li-item:last-child {
+        border-bottom: none;
+      }
+
+      .li-item i {
+        color: var(--secondary);
+        width: 22px;
+        height: 22px;
+        background: rgba(212, 175, 55, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+      }
+
+      .premium {
+        border-top: 8px solid var(--secondary);
+      }
+
+      .premium .price-box {
+        background: linear-gradient(135deg, var(--secondary) 0%, #e4c04d 100%);
+      }
+      
+      .premium .price-box::after {
+        border-top: 15px solid #e4c04d;
+      }
+
+      .premium .sitting-sticker {
+        background: var(--secondary);
+        box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+        right: 0px;
+      }
+
+      .highlight {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        font-family: 'Playfair Display', serif;
+      }
+      
+      .highlight::before {
+        content: "₹";
+        font-size: 0.8em;
+        margin-right: 2px;
+      }
+
+      .package:nth-child(2) .price-box {
+        background: linear-gradient(135deg, #2e8b57 0%, #3aa76d 100%);
+      }
+      
+      .package:nth-child(2) .price-box::after {
+        border-top: 15px solid #3aa76d;
+      }
+
+      .package:nth-child(2) .sitting-sticker {
+        background: #2e8b57;
+        box-shadow: 0 5px 20px rgba(46, 139, 87, 0.4);
+      }
+
+      .offer-text {
+        font-size: 0.9em;
+        opacity: 0.9;
+        margin-top: 5px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      
+      .package-footer {
+        margin-top: 30px;
+      }
+      
+      .book-now {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .premium .book-now {
+        background: var(--secondary);
+      }
+      
+      .package:nth-child(2) .book-now {
+        background: #2e8b57;
+      }
+      
+      .book-now:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+      
+      @keyframes float {
+        0% { transform: rotate(15deg) translateY(0); }
+        50% { transform: rotate(15deg) translateY(-10px); }
+        100% { transform: rotate(15deg) translateY(0); }
+      }
+      
+      .sitting-sticker {
+        animation: float 3s ease-in-out infinite;
+      }
+      
+      .ribbon {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: 2;
+      }
+      
+      .ribbon::before,
+      .ribbon::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 5px solid #d4af37;
+        border-top-color: transparent;
+        border-right-color: transparent;
+      }
+      
+      .ribbon::before {
+        top: 0;
+        left: 0;
+      }
+      
+      .ribbon::after {
+        bottom: 0;
+        right: 0;
+      }
+      
+      .ribbon span {
+        position: absolute;
+        display: block;
+        width: 225px;
+        padding: 15px 0;
+        background-color: var(--accent);
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+        color: #fff;
+        font: 700 1em/1 'Poppins', sans-serif;
+        text-shadow: 0 1px 1px rgba(0,0,0,.2);
+        text-transform: uppercase;
+        text-align: center;
+        right: -25px;
+        top: 30px;
+        transform: rotate(45deg);
+      }
+      
+      .premium .ribbon span {
+        background-color: var(--secondary);
+      }
+ 
+        
+        h1, h2, h3 {
+          font-family: 'Playfair Display', serif;
+            color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+           
+        }
+        
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--secondary);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #363636;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin: 25px 0 15px;
+            color: #2c3e2b;
+        }
+        
+        .special-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            color: #270202f9;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        .special-service-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+          
+            padding: 30px;
+            border-radius: 15px;
+            background: #f0e9e0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .special-service-row:hover {
+            transform: translateY(-5px);
+        }
+        
+        .special-service-row-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .text-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .text-content p {
+          text-align: justify;
+        }
+        .image-content {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-content img:hover {
+            transform: scale(1.03);
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .price-highlight {
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .foot-reflexology-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .foot-reflexology-section .image-content {
+            margin-bottom: 30px;
+        }
+        
+        .foot-reflexology-section .text-content {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .therapy-combination-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .therapy-combination-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .therapy-combination-section p {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .therapy-combination-section hr {
+            margin: 30px 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--secondary), transparent);
+        }
+        
+        .tattoos-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .tattoos-text {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .tattoos-images {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .tattoos-images img {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 1024px) {
+            .special-service-row, 
+            .special-service-row-reverse,
+            .tattoos-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .image-content, 
+            .text-content,
+            .tattoos-text,
+            .tattoos-images {
+                padding: 15px;
+            }
+            
+            .tattoos-images img {
+                max-width: 100%;
+            }
+        }
+
+
+
+
+        /* Styling for the floating WhatsApp button */
+.whatsapp-btn {
+  position: fixed; /* Makes the button fixed on the page */
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  z-index: 1000; /* Ensures it appears above other content */
+  width: 60px; /* Button size */
+  height: 60px;
+  background-color: #25d366; /* WhatsApp green color */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 35px; /* Icon size */
+  height: 35px;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+.whatsapp-btn {
+  bottom: 10px;
+  right: 10px;
+  width: 40px; /* Button size */
+  height: 40px;
+}
+.whatsapp-btn img {
+  width: 25px; /* Icon size */
+  height: 25px;
+}
+}
